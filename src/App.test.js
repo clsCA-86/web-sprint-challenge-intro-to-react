@@ -11,7 +11,7 @@ afterEach(() => {
   document.body.innerHTML = "";
 });
 
-describe("<App />, Review creating a React component, using JavaScript modules to export and import components, using the useState and useEffect hooks to fetch and manage your data, handling side effects, and passing props." , () => {
+describe("<App />", () => {
   test("[2] Luke Skywalker eventually appears in the DOM", async () => {
     render(<App />);
     expect(screen.queryByText(/Luke/i)).not.toBeInTheDocument();
